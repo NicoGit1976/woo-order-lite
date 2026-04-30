@@ -3,7 +3,7 @@
  * Plugin Name:       Harlequin Lite — WooCommerce Order Export
  * Plugin URI:        https://thelionfrog.com/products/plugins/woo-order-pro
  * Description:       Harlequin Lite carries your WooCommerce orders wherever you need them — manual + bulk exports as CSV, delivered by Email or SFTP. Lite edition of the Lion Frog export module.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            The Lion Frog Team
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PELICAN_VERSION',  '1.2.0' );
+define( 'PELICAN_VERSION',  '1.2.1' );
 define( 'PELICAN_EDITION',  'lite' );
 define( 'PELICAN_FILE',     __FILE__ );
 define( 'PELICAN_PATH',     plugin_dir_path( __FILE__ ) );
