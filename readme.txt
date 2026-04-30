@@ -1,17 +1,17 @@
-=== Bull Lite — WooCommerce Order Export ===
+=== Red-Headed Lite — WooCommerce Order Export ===
 Contributors: thelionfrog
 Tags: woocommerce, export, csv, sftp, email
 Requires at least: 6.2
 Tested up to: 6.6
 Requires PHP: 8.1
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPL-2.0-or-later
 
-🐂 Free WooCommerce order export — manual + bulk to CSV, delivered by Email or SFTP. Part of WooFrog Suite.
+🐂 Free WooCommerce order export — manual + bulk to CSV, delivered by Email or SFTP. Part of Ultimate Woo Powertools.
 
 == Description ==
 
-**Bull Lite** is the free starting point. Manual or bulk export from the WC orders list — one profile, CSV format, email or SFTP delivery.
+**Red-Headed Lite** is the free starting point. Manual or bulk export from the WC orders list — one profile, CSV format, email or SFTP delivery.
 
 = What you get (free) =
 * CSV export of WooCommerce orders
