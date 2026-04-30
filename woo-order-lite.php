@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       The Lion Frog | Pélican Lite
- * Plugin URI:        https://thelionfrog.com/products/plugins/pelican
- * Description:       Pélican carries your WooCommerce orders wherever you need them — manual + bulk exports as CSV, delivered by Email or SFTP. Lite version of the Lion Frog export module.
- * Version:           1.0.0
+ * Plugin Name:       Harlequin Lite — WooCommerce Order Export
+ * Plugin URI:        https://thelionfrog.com/products/plugins/woo-order-pro
+ * Description:       Harlequin Lite carries your WooCommerce orders wherever you need them — manual + bulk exports as CSV, delivered by Email or SFTP. Lite edition of the Lion Frog export module.
+ * Version:           1.1.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            The Lion Frog Team
@@ -23,13 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PELICAN_VERSION',  '1.0.0' );
+define( 'PELICAN_VERSION',  '1.1.0' );
 define( 'PELICAN_EDITION',  'lite' );
 define( 'PELICAN_FILE',     __FILE__ );
 define( 'PELICAN_PATH',     plugin_dir_path( __FILE__ ) );
 define( 'PELICAN_URL',      plugin_dir_url( __FILE__ ) );
 define( 'PELICAN_BASENAME', plugin_basename( __FILE__ ) );
-define( 'PELICAN_SLUG',     'pelican-lite' );
+define( 'PELICAN_SLUG',     'woo-order-lite' );
 
 if ( file_exists( PELICAN_PATH . 'vendor/autoload.php' ) ) {
     require_once PELICAN_PATH . 'vendor/autoload.php';
