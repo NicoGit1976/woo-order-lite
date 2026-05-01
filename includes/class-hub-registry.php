@@ -22,13 +22,13 @@ class Pelican_Hub_Registry {
         'baseline' => 'WooCommerce Order Export',
             'desc'  => __( 'Free WooCommerce order export — manual + bulk to CSV via Email or SFTP. Mascot: Red-Headed Poison Frog.', 'pelican' ),
             'lite'  => array(
-                'name' => 'The Lion Frog | Harlequin Lite',
+                'name' => 'The Lion Frog | Red-Headed Lite',
                 'slug' => 'woo-order-lite',
                 'img'  => 'woo-order-lite.webp',
                 'url'  => 'admin.php?page=pelican',
             ),
             'pro'   => array(
-                'name' => 'The Lion Frog | Harlequin Pro',
+                'name' => 'The Lion Frog | Red-Headed Pro',
                 'slug' => 'woo-order-pro',
                 'img'  => 'woo-order-pro.webp',
                 'url'  => 'admin.php?page=pelican',

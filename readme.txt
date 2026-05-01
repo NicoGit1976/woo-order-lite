@@ -4,7 +4,7 @@ Tags: woocommerce, export, csv, sftp, email
 Requires at least: 6.2
 Tested up to: 6.6
 Requires PHP: 8.1
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPL-2.0-or-later
 
 🐂 Free WooCommerce order export — manual + bulk to CSV, delivered by Email or SFTP. Part of Ultimate Woo Powertools.
