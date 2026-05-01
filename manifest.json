@@ -1,5 +1,5 @@
 {
-  "slug": "woo-order-lite",
+  "slug": "red-headed-lite",
   "title": "Red-Headed Lite",
   "display_name": "Red-Headed Lite",
   "subtitle": "Exports Orders Everywhere, Anytime",
@@ -7,7 +7,7 @@
   "tagline": "Exports orders everywhere, anytime — manual + bulk, CSV via Email/SFTP.",
   "mascot": "redheaded",
   "edition": "lite",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "license_required": false,
   "shop_url": "https://thelionfrog.com/products/plugins/woo-order-pro",
   "pro_slug": "woo-order-pro",
