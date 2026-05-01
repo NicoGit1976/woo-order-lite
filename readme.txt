@@ -1,21 +1,21 @@
-=== Red-Headed Lite — WooCommerce Order Export ===
+=== Red-Headed Lite — Exports Orders Everywhere, Anytime ===
 Contributors: thelionfrog
 Tags: woocommerce, export, csv, sftp, email
 Requires at least: 6.2
 Tested up to: 6.6
 Requires PHP: 8.1
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 License: GPL-2.0-or-later
 
-🐂 Free WooCommerce order export — manual + bulk to CSV, delivered by Email or SFTP. Part of Ultimate Woo Powertools.
+🐂 Exports WooCommerce orders everywhere, anytime — manual + bulk to CSV, delivered by Email or SFTP. Part of Ultimate Woo Powertools (by The Lion Frog).
 
 == Description ==
 
-**Red-Headed Lite** is the free starting point. Manual or bulk export from the WC orders list — one profile, CSV format, email or SFTP delivery.
+**Red-Headed Lite** is the free starting point — exports your WooCommerce orders everywhere, anytime. Manual or bulk export from the WC orders list — one profile, CSV format, email or SFTP delivery.
 
 = What you get (free) =
 * CSV export of WooCommerce orders
-* Bulk action **🃏 Export with Harlequin** on the WC orders list
+* Bulk action **🃏 Export with Red-Headed** on the WC orders list
 * Email delivery (30 sends per 24h sliding window)
 * SFTP delivery (encrypted password storage)
 * 1 export profile
@@ -34,7 +34,7 @@ Pro features remain visible in the admin but are soft-locked. Upgrade for:
 
 1. Upload `woo-order-lite` to `/wp-content/plugins/`.
 2. Activate it.
-3. Go to **Froggy Hub → Harlequin** to configure.
+3. Go to **Froggy Hub → Red-Headed** to configure.
 
 == Changelog ==
 

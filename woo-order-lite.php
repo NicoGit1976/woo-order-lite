@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Red-Headed Lite — WooCommerce Order Export
- * Plugin URI:        https://thelionfrog.com/products/plugins/woo-order-pro
- * Description:       Export WooCommerce orders — Lite edition. Manual + bulk to CSV via Email or SFTP. Mascot: Red-Headed Poison Frog. Part of Ultimate Woo Powertools.
- * Version:           1.4.1
+ * Plugin Name:       Red-Headed Lite — Exports Orders Everywhere, Anytime
+ * Plugin URI:        https://thelionfrog.com
+ * Description:       Exports WooCommerce orders everywhere, anytime — Lite edition. Manual + bulk to CSV via Email or SFTP. Mascot: Red-Headed Poison Frog. Part of Ultimate Woo Powertools (by The Lion Frog).
+ * Version:           1.4.2
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            The Lion Frog Team
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PELICAN_VERSION', '1.4.1' );
+define( 'PELICAN_VERSION', '1.4.2' );
 define( 'PELICAN_EDITION',  'lite' );
 define( 'PELICAN_FILE',     __FILE__ );
 define( 'PELICAN_PATH',     plugin_dir_path( __FILE__ ) );
