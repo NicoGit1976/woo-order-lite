@@ -4,7 +4,7 @@ Tags: woocommerce, export, csv, sftp, email
 Requires at least: 6.2
 Tested up to: 6.6
 Requires PHP: 8.1
-Stable tag: 1.4.3
+Stable tag: 1.4.4
 License: GPL-2.0-or-later
 
 🐂 Exports WooCommerce orders everywhere, anytime — manual + bulk to CSV, delivered by Email or SFTP. Part of Ultimate Woo Powertools (by The Lion Frog).
@@ -37,6 +37,9 @@ Pro features remain visible in the admin but are soft-locked. Upgrade for:
 3. Go to **Froggy Hub → Red-Headed** to configure.
 
 == Changelog ==
+
+= 1.4.4 =
+* **Fix (CRITICAL):** Removed obsolete legacy main file (`woo-order-lite.php`). Both `woo-order-lite.php` and `red-headed-lite.php` carried a `Plugin Name:` header → WordPress loaded them as TWO plugins → fatal "Cannot redeclare" on activation. Plugin was unactivatable since the rebrand.
 
 = 1.1.0 — 2026-04-30 =
 * Verbal rebrand: ships as **Harlequin Lite — WooCommerce Order Export**.
