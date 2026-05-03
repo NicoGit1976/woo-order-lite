@@ -3,7 +3,7 @@
  * Plugin Name:       Red-Headed Lite — Exports Orders Everywhere, Anytime
  * Plugin URI:        https://thelionfrog.com
  * Description:       Exports WooCommerce orders everywhere, anytime — Lite edition. Manual + bulk to CSV via Email or SFTP. Mascot: Red-Headed Poison Frog. Part of Ultimate Woo Powertools (by The Lion Frog).
- * Version:           1.4.8
+ * Version:           1.4.9
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            The Lion Frog Team
@@ -23,13 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'PELICAN_VERSION', '1.4.8' );
+define( 'PELICAN_VERSION', '1.4.9' );
 define( 'PELICAN_EDITION',  'lite' );
 define( 'PELICAN_FILE',     __FILE__ );
 define( 'PELICAN_PATH',     plugin_dir_path( __FILE__ ) );
 define( 'PELICAN_URL',      plugin_dir_url( __FILE__ ) );
 define( 'PELICAN_BASENAME', plugin_basename( __FILE__ ) );
-define( 'PELICAN_SLUG',     'woo-order-lite' );
+define( 'PELICAN_SLUG',     'red-headed-lite' );
 add_action( 'plugins_loaded', function () {
     if ( class_exists( 'FH_Plugin_Updater' ) ) {
         FH_Plugin_Updater::register( [
@@ -43,7 +43,7 @@ add_action( 'plugins_loaded', function () {
         $actions[] = [
             'label'       => __( 'Export orders', 'pelican' ),
             'icon'        => '📦',
-            'url'         => admin_url( 'admin.php?page=pelican-exports&action=new' ),
+            'url'         => admin_url( 'admin.php?page=red-headed-lite-exports&action=new' ),
             'tooltip'     => __( 'Run a manual order export', 'pelican' ),
             'plugin_slug' => 'red-headed-lite',
             'is_primary'  => true,
@@ -51,24 +51,41 @@ add_action( 'plugins_loaded', function () {
         $actions[] = [
             'label'       => __( 'Export history', 'pelican' ),
             'icon'        => '📋',
-            'url'         => admin_url( 'admin.php?page=pelican-exports&tab=history' ),
+            'url'         => admin_url( 'admin.php?page=red-headed-lite-exports&tab=history' ),
             'tooltip'     => __( 'View past export jobs', 'pelican' ),
             'plugin_slug' => 'red-headed-lite',
         ];
         $actions[] = [
             'label'       => __( 'Settings', 'pelican' ),
             'icon'        => '⚙️',
-            'url'         => admin_url( 'admin.php?page=pelican-settings' ),
+            'url'         => admin_url( 'admin.php?page=red-headed-lite-settings' ),
             'tooltip'     => __( 'Open Red-Headed settings', 'pelican' ),
             'plugin_slug' => 'red-headed-lite',
         ];
         return $actions;
     } );
 }, 5 );
-/* Brand-rename — 301 from legacy admin URL to new (preserves bookmarks). */
+/* Brand-rename — 301 from legacy 'pelican*' / 'woo-order-lite' admin URLs to new
+   'red-headed-lite*' (preserves bookmarks). */
 add_action( 'admin_init', function () {
-    if ( isset( $_GET['page'] ) && $_GET['page'] === 'woo-order-lite' ) {
-        wp_safe_redirect( admin_url( 'admin.php?page=red-headed-lite' ), 301 );
+    if ( ! isset( $_GET['page'] ) ) return;
+    $p = (string) $_GET['page'];
+    $map = [
+        'woo-order-lite'                => 'red-headed-lite',
+        'pelican'                       => 'red-headed-lite',
+        'pelican-exports'               => 'red-headed-lite-exports',
+        'pelican-settings'              => 'red-headed-lite-settings',
+        'pelican-settings-profiles'     => 'red-headed-lite-settings-profiles',
+        'pelican-settings-destinations' => 'red-headed-lite-settings-destinations',
+        'pelican-settings-cron'         => 'red-headed-lite-settings-cron',
+        'pelican-settings-webhooks'     => 'red-headed-lite-settings-webhooks',
+        'pelican-settings-general'      => 'red-headed-lite-settings-general',
+    ];
+    if ( isset( $map[ $p ] ) ) {
+        $url = add_query_arg( 'page', $map[ $p ], admin_url( 'admin.php' ) );
+        $extras = $_GET; unset( $extras['page'] );
+        if ( ! empty( $extras ) ) $url = add_query_arg( $extras, $url );
+        wp_safe_redirect( $url, 301 );
         exit;
     }
 }, 1 );
