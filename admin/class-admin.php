@@ -15,7 +15,9 @@ class Pelican_Admin {
         add_action( 'wp_ajax_pelican_run_profile', array( $this, 'ajax_run_profile' ) );
     }
     public function register_menu() {
-        $cap = 'manage_woocommerce';
+        /* v1.4.13 — Cap lowered to 'manage_options' (was 'manage_woocommerce'). Admin
+           gate for the menu; WC-specific runtime checks stay in AJAX handlers. */
+        $cap = 'manage_options';
         /* No top-level menu. All pages register under parent=null with a
            shared in-page nav at the top (Dashboard / Exports / Settings). */
         /* v1.4.12 — Dashboard registered under 'froggy-hub' parent so Hub placeholder
