@@ -281,7 +281,7 @@
                 '<select class="pl-dest-auth"><option value="bearer">Bearer</option><option value="basic">Basic</option><option value="header">Custom header</option></select>' +
                 '<input type="text" class="pl-dest-token" placeholder="token / user:pass / header value" />';
         } else {
-            box.innerHTML = '<p class="pl-muted">' + type + ' — configured in next step (Pro).</p>';
+            box.innerHTML = '<p class="pl-muted">' + type + ' is a Pro destination. <a href="https://thelionfrog.com/products/plugins/red-headed-pro" target="_blank" rel="noopener">Upgrade to Pro</a> to unlock.</p>';
         }
     }
 
