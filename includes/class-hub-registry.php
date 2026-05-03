@@ -25,13 +25,13 @@ class Pelican_Hub_Registry {
                 'name' => 'The Lion Frog | Red-Headed Lite',
                 'slug' => 'red-headed-lite',
                 'img'  => 'woo-order-lite.webp',
-                'url'  => 'admin.php?page=pelican',
+                'url'  => 'admin.php?page=red-headed-lite',
             ),
             'pro'   => array(
                 'name' => 'The Lion Frog | Red-Headed Pro',
                 'slug' => 'woo-order-pro',
                 'img'  => 'woo-order-pro.webp',
-                'url'  => 'admin.php?page=pelican',
+                'url'  => 'admin.php?page=red-headed-lite',
                 'shop' => 'https://thelionfrog.com/products/plugins/woo-order-pro',
             ),
         );
