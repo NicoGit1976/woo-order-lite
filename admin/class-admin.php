@@ -8,7 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
  */
 class Pelican_Admin {
     public function __construct() {
-        add_action( 'admin_menu', array( $this, 'register_menu' ), 11 );
+        /* v1.4.14 — prio 110 (was 11). See red-headed-pro v1.4.16 commit. Hub
+           registers parent 'froggy-hub' at prio 98 — Pelican must fire AFTER. */
+        add_action( 'admin_menu', array( $this, 'register_menu' ), 110 );
         add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_assets' ) );
         add_action( 'wp_ajax_pelican_save_profile', array( $this, 'ajax_save_profile' ) );
         add_action( 'wp_ajax_pelican_delete_profile', array( $this, 'ajax_delete_profile' ) );
