@@ -26,7 +26,7 @@ class Pelican_Admin {
            shared in-page nav at the top (Dashboard / Exports / Settings). */
         /* v1.4.12 — Dashboard registered under 'froggy-hub' parent so Hub placeholder
            dedup catches it (no double menu entry, no redirect loop). */
-        add_submenu_page( 'froggy-hub', __( 'Red-Headed Dashboard', 'pelican' ), 'Red-Headed Lite', $cap, 'red-headed-lite', array( $this, 'render_dashboard' ) );
+        add_submenu_page( 'froggy-hub', __( 'Red-Headed Dashboard', 'pelican' ), 'Red-Headed (Lite)', $cap, 'red-headed-lite', array( $this, 'render_dashboard' ) );
         add_submenu_page( null, __( 'Red-Headed Exports',   'pelican' ), '', $cap, 'red-headed-lite-exports',  array( $this, 'render_exports' ) );
         add_submenu_page( null, __( 'Red-Headed Settings',  'pelican' ), '', $cap, 'red-headed-lite-settings', array( $this, 'render_settings' ) );
 
