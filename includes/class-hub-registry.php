@@ -17,9 +17,12 @@ class Pelican_Hub_Registry {
 
     public static function register( $ecosystem ) {
         if ( ! is_array( $ecosystem ) ) $ecosystem = array();
-        $ecosystem['pelican'] = array(
-            'title' => 'Red Headed Lite',
-        'baseline' => 'Exports Orders Everywhere, Anytime',
+        /* v1.4.37 — product_key 'red-headed' aligned on the hardcoded
+           Hub fallback so the auto-registered entry overrides instead of
+           creating a duplicate sidebar card. */
+        $ecosystem['red-headed'] = array(
+            'title'    => 'Red Headed',
+            'baseline' => 'Simple Orders Export',
             'desc'  => __( 'Exports WooCommerce orders everywhere, anytime — manual + bulk to CSV via Email or SFTP. Mascot: Red-Headed Poison Frog.', 'pelican' ),
             'lite'  => array(
                 'name' => 'The Lion Frog | Red-Headed Lite',
