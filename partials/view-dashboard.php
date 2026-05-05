@@ -36,7 +36,7 @@ $by_format_map = array(); foreach ( (array) $by_format as $r ) $by_format_map[ $
         FH_UI_Helper::render_header(
             'Red Headed Lite',
             __( 'Exports Orders Everywhere, Anytime', 'pelican' ),
-            'mascot-redheaded-v1.svg',
+            'red-headed-lite.webp',
             array(),
             'red-headed-lite'
         );
