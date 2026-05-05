@@ -1,4 +1,14 @@
-# Harlequin — Changelog
+# Red-Headed Lite — Changelog
+
+## 1.4.34 — 2026-05-05
+
+### Added
+- `uninstall.php` — full data cleanup when the plugin is deleted (default ON).
+  Mirrors Pro behaviour: drops `pl_profiles` and `pl_jobs` tables only if
+  the sister edition (`red-headed-pro`) is no longer installed, so a
+  Lite → Pro upgrade preserves history.
+- "Clean on uninstall" toggle in Settings > General > Data hygiene
+  (default ON).
 
 ## 1.4.0 — 2026-04-30
 
