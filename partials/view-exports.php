@@ -55,7 +55,7 @@ if ( isset( $_POST['pl_clear_logs'] ) && check_admin_referer( 'pl_clear_logs' ) 
     <?php
     if ( class_exists( 'FH_UI_Helper' ) ) {
         FH_UI_Helper::render_header(
-            'Red-Headed Lite',
+            'Red Headed Lite',
             __( 'Exports Orders Everywhere, Anytime', 'pelican' ),
             'mascot-redheaded-v1.svg',
             array(),

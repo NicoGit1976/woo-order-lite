@@ -34,7 +34,7 @@ $by_format_map = array(); foreach ( (array) $by_format as $r ) $by_format_map[ $
     /* v1.4.26 — Canonical Hub-rendered header (Lite-Pro alignment with Pro v1.4.28). */
     if ( class_exists( 'FH_UI_Helper' ) ) {
         FH_UI_Helper::render_header(
-            'Red-Headed Lite',
+            'Red Headed Lite',
             __( 'Exports Orders Everywhere, Anytime', 'pelican' ),
             'mascot-redheaded-v1.svg',
             array(),
